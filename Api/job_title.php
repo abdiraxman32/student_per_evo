@@ -15,7 +15,6 @@ function register_job_title($conn)
 
     if ($result) {
 
-
         $data = array("status" => true, "data" => "successfully Registered 😂😊😒😎");
     } else {
         $data = array("status" => false, "data" => $conn->error);

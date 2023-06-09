@@ -26,7 +26,7 @@ $("#loginForm").on("submit", function (e) {
       if (status) {
 
 
-        window.location.href = "../view/index.php";
+        window.location.href = "index.php";
 
       } else {
         swal("NOW!", response, "error");

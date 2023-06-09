@@ -5,7 +5,6 @@ $("#jobForm").on("submit", function (event) {
 
   event.preventDefault();
 
-
   let position = $("#position").val();
   let salary = $("#salary").val();
   let id = $("#update_id").val();
