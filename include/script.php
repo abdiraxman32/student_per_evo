@@ -29,6 +29,13 @@
 <script src="javascript/user.js"></script>
 <script src="javascript/employe.js"></script>
 <script src="javascript/branch.js"></script>
+<script src="javascript/class.js"></script>
+<script src="javascript/level.js"></script>
+<script src="javascript/department.js"></script>
+<script src="javascript/faculty.js"></script>
+<script src="javascript/shift.js"></script>
+<script src="javascript/subject.js"></script>
+<script src="javascript/student.js"></script>
 <script src="javascript/job_title.js"></script>
 <script src="javascript/teacher.js"></script>
 <script src="javascript/car_modals.js"></script>

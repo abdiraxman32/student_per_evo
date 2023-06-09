@@ -92,11 +92,11 @@
         <li class="menu-item">
             <a href="javascript:void(0);" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons bx bx-lock-open-alt"></i>
-                <div data-i18n="students">students</div>
+                <div data-i18n="students">Students</div>
             </a>
             <ul class="menu-sub">
                 <li class="menu-item">
-                    <a href="#" class="menu-link">
+                    <a href="student.php" class="menu-link">
                         <div data-i18n="register student">register student</div>
                     </a>
                 </li>
@@ -142,8 +142,83 @@
             </a>
             <ul class="menu-sub">
                 <li class="menu-item">
-                    <a href="#" class="menu-link">
+                    <a href="class.php" class="menu-link">
                         <div data-i18n="class">class</div>
+                    </a>
+                </li>
+
+            </ul>
+        </li>
+
+        <li class="menu-item">
+            <a href="javascript:void(0)" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons bx bx-copy"></i>
+                <div data-i18n="class">Level</div>
+            </a>
+            <ul class="menu-sub">
+                <li class="menu-item">
+                    <a href="level.php" class="menu-link">
+                        <div data-i18n="class">level</div>
+                    </a>
+                </li>
+
+            </ul>
+        </li>
+
+        <li class="menu-item">
+            <a href="javascript:void(0)" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons bx bx-copy"></i>
+                <div data-i18n="class">Faculty</div>
+            </a>
+            <ul class="menu-sub">
+                <li class="menu-item">
+                    <a href="faculty.php" class="menu-link">
+                        <div data-i18n="class">faculty</div>
+                    </a>
+                </li>
+
+            </ul>
+        </li>
+
+        <li class="menu-item">
+            <a href="javascript:void(0)" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons bx bx-copy"></i>
+                <div data-i18n="class">Shift</div>
+            </a>
+            <ul class="menu-sub">
+                <li class="menu-item">
+                    <a href="shift.php" class="menu-link">
+                        <div data-i18n="class">shift</div>
+                    </a>
+                </li>
+
+            </ul>
+        </li>
+
+        <li class="menu-item">
+            <a href="javascript:void(0)" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons bx bx-copy"></i>
+                <div data-i18n="class">Student</div>
+            </a>
+            <ul class="menu-sub">
+                <li class="menu-item">
+                    <a href="student.php" class="menu-link">
+                        <div data-i18n="class">student</div>
+                    </a>
+                </li>
+
+            </ul>
+        </li>
+        
+        <li class="menu-item">
+            <a href="javascript:void(0)" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons bx bx-copy"></i>
+                <div data-i18n="class">Department</div>
+            </a>
+            <ul class="menu-sub">
+                <li class="menu-item">
+                    <a href="department.php" class="menu-link">
+                        <div data-i18n="class">department</div>
                     </a>
                 </li>
 
@@ -189,7 +264,7 @@
             </a>
             <ul class="menu-sub">
                 <li class="menu-item">
-                    <a href="#" class="menu-link">
+                    <a href="account.php" class="menu-link">
                         <div data-i18n="register_account">register_account</div>
                     </a>
                 </li>

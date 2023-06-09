@@ -10,7 +10,7 @@ $("#accountForm").on("submit", function (event) {
 
   let bank_name = $("#bank_name").val();
   let holder_name = $("#holder_name").val();
-  let accoun_number = $("#accoun_number").val();
+  let account_number = $("#account_number").val();
   let balance = $("#balance").val();
   let id = $("#update_id").val();
 
@@ -20,17 +20,17 @@ $("#accountForm").on("submit", function (event) {
     sendingData = {
       "bank_name": bank_name,
       "holder_name": holder_name,
-      "accoun_number": accoun_number,
+      "account_number": account_number,
       "balance": balance,
       "action": "register_account"
     }
 
   } else {
     sendingData = {
-      "Account_id": id,
+      "account_id": id,
       "bank_name": bank_name,
       "holder_name": holder_name,
-      "accoun_number": accoun_number,
+      "account_number": account_number,
       "balance": balance,
       "action": "update_account"
     }
@@ -120,13 +120,13 @@ function loadaccount() {
               <i class="bx bx-dots-vertical-rounded"></i>
           </button>
           <div class="dropdown-menu">
-              <a class="dropdown-item  update_info" href="javascript:void(0);" update_id=${res['Account_id']}><i class="bx bx-edit-alt me-1"></i> Edit</a>
-              <a class="dropdown-item delete_info" href="javascript:void(0);" delete_id=${res['Account_id']}><i class="bx bx-trash me-1"></i> Delete</a>
+              <a class="dropdown-item  update_info" href="javascript:void(0);" update_id=${res['account_id']}><i class="bx bx-edit-alt me-1"></i> Edit</a>
+              <a class="dropdown-item delete_info" href="javascript:void(0);" delete_id=${res['account_id']}><i class="bx bx-trash me-1"></i> Delete</a>
           </div>
       </div></td>`
           tr += "</tr>"
 
-          // tr += `<td> <a class="btn btn-info update_info"  update_id=${res['Account_id']}><i class="mdi mdi-grease-pencil" style="color: #fff"></i></a>&nbsp;&nbsp <a class="btn btn-danger delete_info" delete_id=${res['Account_id']}><i class="mdi mdi-close-box
+          // tr += `<td> <a class="btn btn-info update_info"  update_id=${res['account_id']}><i class="mdi mdi-grease-pencil" style="color: #fff"></i></a>&nbsp;&nbsp <a class="btn btn-danger delete_info" delete_id=${res['account_id']}><i class="mdi mdi-close-box
           // " style="color: #fff"></i></a> </td>`
           // tr += "</tr>"
 
@@ -144,11 +144,11 @@ function loadaccount() {
   })
 }
 
-function get_account_info(Account_id) {
+function get_account_info(account_id) {
 
   let sendingData = {
     "action": "get_account_info",
-    "Account_id": Account_id
+    "account_id": account_id
   }
 
   $.ajax({
@@ -166,10 +166,10 @@ function get_account_info(Account_id) {
 
         btnAction = "update";
 
-        $("#update_id").val(response['Account_id']);
+        $("#update_id").val(response['account_id']);
         $("#bank_name").val(response['bank_name']);
         $("#holder_name").val(response['holder_name']);
-        $("#accoun_number").val(response['accoun_number']);
+        $("#account_number").val(response['account_number']);
         $("#balance").val(response['balance']);
         $("#accountmodal").modal('show');
 
@@ -188,11 +188,11 @@ function get_account_info(Account_id) {
   })
 }
 
-function Delete_account(Account_id) {
+function Delete_account(account_id) {
 
   let sendingData = {
     "action": "Delete_account",
-    "Account_id": Account_id
+    "account_id": account_id
   }
 
   $.ajax({

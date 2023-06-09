@@ -3,7 +3,6 @@
 include 'include/header.php';
 
 ?>
-
 <!-- Layout wrapper -->
 <div class="layout-wrapper layout-content-navbar">
     <div class="layout-container">
@@ -31,12 +30,12 @@ include 'include/header.php';
                         <div class="col-md-12">
                             <div class="card">
                                 <div class="text-end">
-                                    <button type="button" class="btn btn-success  m-2" data-bs-toggle="modal" data-bs-target="#sellingmodal">
-                                        Add selling
+                                    <button type="button" class="btn btn-success  m-2" data-bs-toggle="modal" data-bs-target="#levelmodal">
+                                        Add level
                                     </button>
                                 </div>
-                                <h5 class="card-header">Selling Table</h5>
-                                <div class="table-responsive text-nowrap" id="sellingTable">
+                                <h5 class="card-header">customer Table</h5>
+                                <div class="table-responsive text-nowrap" id="levelTable">
                                     <table class="table">
                                         <thead class="table-light">
 
@@ -55,69 +54,32 @@ include 'include/header.php';
 
 
 
-                <div class="modal fade" id="sellingmodal" tabindex="-1" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog" role="document">
+                <div class="modal fade" id="levelmodal" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="modalCenterTitle">Selling Modal</h5>
+                                <h5 class="modal-title" id="modalCenterTitle">levele Modal</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
 
-                                <form id="sellingForm">
+                                <form id="levelform">
                                     <input type="hidden" name="update_id" id="update_id">
+
+
                                     <div class="row">
-                                        <div class="col-sm-12">
-                                            <div class="form-group">
-                                                <label for="">customer_name</label>
-                                                <select name="customer_id" id="customer_id" class="form-control">
 
-                                                </select>
+
+
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label for="">level_name</label>
+                                                <input type="text" name="name" id="name" class="form-control" required>
                                             </div>
 
                                         </div>
 
-
-                                        <div class="col-sm-12 mt-3">
-                                            <div class="form-group">
-                                                <label for="">car_name</label>
-                                                <select name="car_id" id="car_id" class="form-control car_name">
-
-                                                </select>
-                                            </div>
-
-                                        </div>
-
-                                        <div class="col-sm-12 mt-3">
-                                            <div class="form-group">
-                                                <label for="">price</label>
-                                                <input type="text" name="price" id="price" class="form-control" readonly>
-                                            </div>
-
-                                        </div>
-
-                                        <div class="col-sm-12 mt-3">
-                                            <div class="form-group">
-                                                <label for="">quantity</label>
-                                                <input type="number" name="quantity" id="quantity" class="form-control">
-                                            </div>
-
-                                        </div>
-
-
-                                        <div class="col-sm-12 mt-3">
-                                            <div class="form-group">
-                                                <label for="">balance</label>
-                                                <input type="text" name="balance" id="balance" class="form-control" readonly>
-                                            </div>
-
-                                        </div>
-
-
-
-
-
-
+                                        
 
 
                                     </div>

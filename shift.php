@@ -30,12 +30,12 @@ include 'include/header.php';
                         <div class="col-md-12">
                             <div class="card">
                                 <div class="text-end">
-                                    <button type="button" class="btn btn-success  m-2" data-bs-toggle="modal" data-bs-target="#accountmodal">
-                                        Add new Account
+                                    <button type="button" class="btn btn-success  m-2" data-bs-toggle="modal" data-bs-target="#shiftmodal">
+                                        Add shift
                                     </button>
                                 </div>
-                                <h5 class="card-header">Account Table</h5>
-                                <div class="table-responsive text-nowrap" id="accountTable">
+                                <h5 class="card-header">customer Table</h5>
+                                <div class="table-responsive text-nowrap" id="shiftTable">
                                     <table class="table">
                                         <thead class="table-light">
 
@@ -52,52 +52,34 @@ include 'include/header.php';
                 </div>
                 <!-- / Content -->
 
-                <div class="modal fade" id="accountmodal" tabindex="-1" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
+
+
+                <div class="modal fade" id="shiftmodal" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="modalCenterTitle">Account Modal</h5>
+                                <h5 class="modal-title" id="modalCenterTitle">shift Modal</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
 
-                                <form id="accountForm">
+                                <form id="shiftform">
                                     <input type="hidden" name="update_id" id="update_id">
 
+
                                     <div class="row">
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label for="">bank_name</label>
-                                                <input type="text" name="bank_name" id="bank_name" class="form-control" required>
-                                            </div>
 
-                                        </div>
+
 
                                         <div class="col-sm-6">
                                             <div class="form-group">
-                                                <label for="">holder_name</label>
-                                                <input type="text" name="holder_name" id="holder_name" class="form-control" required>
+                                                <label for="">shift_name</label>
+                                                <input type="text" name="name" id="name" class="form-control" required>
                                             </div>
 
                                         </div>
 
-
-                                        <div class="col-sm-6 mt-4">
-                                            <div class="form-group">
-                                                <label for="">accoun_number</label>
-                                                <input type="number" name="account_number" id="account_number" class="form-control" required>
-                                            </div>
-
-                                        </div>
-
-                                        <div class="col-sm-6 mt-4">
-                                            <div class="form-group">
-                                                <label for="">balance</label>
-                                                <input type="number" name="balance" id="balance" class="form-control" required>
-                                            </div>
-
-                                        </div>
-
+                                        
 
 
                                     </div>
@@ -112,6 +94,8 @@ include 'include/header.php';
                         </div>
                     </div>
                 </div>
+
+
 
                 <!-- Footer -->
 
