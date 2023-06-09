@@ -1,3 +1,11 @@
+<?php
+session_start();
+if (isset($_SESSION['username'])) {
+  header('Location:index.php');
+}
+
+?>
+
 <!DOCTYPE html>
 
 <html lang="en" class="light-style customizer-hide" dir="ltr" data-theme="theme-default" data-assets-path="../assets/" data-template="vertical-menu-template-free">
@@ -6,7 +14,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-  <title>Login Basic - Pages | Sneat - Bootstrap 5 HTML Admin Template - Pro</title>
+  <title>student performance_evoluation</title>
 
   <meta name="description" content="" />
 
@@ -158,6 +166,6 @@
 
 <?php
 
-include '../include/script.php';
+include 'include/script.php';
 
 ?>
